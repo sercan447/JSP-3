@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>kalsaydin</servlet-name>
+        <servlet-class>com.gozluk.Sahil</servlet-class>
+        
+        <init-param>
+            <param-name>hayat1</param-name>
+            <param-value>mugla</param-value>
+        </init-param>
+        
+        <init-param>
+            <param-name>hayat2</param-name>
+            <param-value>bodrum</param-value>
+        </init-param>
+        
+        <init-param>
+            <param-name>hayat3</param-name>
+            <param-value>hissiyatim incirler</param-value>
+        </init-param>
+        
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>kalsaydin</servlet-name>
+        <url-pattern>/millipark</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>sarkici1</param-name>
+        <param-value>ilyas yalcintas</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>sarkici2</param-name>
+        <param-value>ebru gundes</param-value>
+    </context-param>
+    
+    
+
+    
+    <servlet>
+        <servlet-name>DegerUret</servlet-name>
+        <jsp-file>/Tebessum.jsp</jsp-file>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DegerUret</servlet-name>
+        <url-pattern>/lokmanhekim</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>KaybedenlerKlubu</servlet-name>
+        <servlet-class>com.gozluk.GetAllRequestParametersInServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>KaybedenlerKlubu</servlet-name>
+        <url-pattern>/jcgservlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Mutevelli</servlet-name>
+        <servlet-class>com.gozluk.YorucuDurum</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Mutevelli</servlet-name>
+        <url-pattern>/bukarar</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>Yerigeldi</servlet-name>
+        <servlet-class>com.gozluk.Aksam</servlet-class>
+        
+        <init-param>
+            <param-name>can</param-name>
+            <param-value>gel</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Yerigeldi</servlet-name>
+        <url-pattern>/sexyaparken</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
